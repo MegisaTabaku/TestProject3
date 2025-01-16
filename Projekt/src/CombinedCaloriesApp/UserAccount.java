@@ -6,7 +6,6 @@ import java.util.Map;
 public class UserAccount {
     private Map<String, String> users = new HashMap<>();
 
-    // Method to create a new account
     public boolean createAccount(String username, String password) {
         if (users.containsKey(username)) {
             return false; // User already exists
